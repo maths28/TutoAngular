@@ -9,7 +9,7 @@ import {Product} from "./product.model";
 export class ProductsListComponent {
     filter: string = "";
     textButtonImage : string = "Afficher les images";
-    colonnesTable: Array<string> = ['productId', 'productName', 'productCode'];
+    colonnesTable: Array<string> = ['productId', 'productName', 'productCode', 'releaseDate', 'price', 'starRating'];
 
     productList: Array<Product> = [
       {

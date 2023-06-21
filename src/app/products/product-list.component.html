@@ -21,6 +21,21 @@
     <td mat-cell *matCellDef="let product"> {{product.productCode}}</td>
   </ng-container>
 
+  <ng-container matColumnDef="releaseDate">
+    <th mat-header-cell *matHeaderCellDef> Available </th>
+    <td mat-cell *matCellDef="let product"> {{product.releaseDate}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="price">
+    <th mat-header-cell *matHeaderCellDef> Price </th>
+    <td mat-cell *matCellDef="let product"> {{product.price}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="starRating">
+    <th mat-header-cell *matHeaderCellDef> 5 Stars Rating </th>
+    <td mat-cell *matCellDef="let product"> {{product.starRating}}</td>
+  </ng-container>
+
   <tr mat-header-row *matHeaderRowDef="colonnesTable"></tr>
   <tr mat-row *matRowDef="let myRowData; columns: colonnesTable"></tr>
 </table>
